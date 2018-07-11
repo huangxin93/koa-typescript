@@ -1,0 +1,20 @@
+{
+  "name": "koa-ts-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"tsc && node dist/server.js",
+    "watch": "nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec 'node -r ts-node/register' ./src/server.ts"
+  },
+  "author": "huangxin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.30",
+    "nodemon": "^1.18.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  }
+}
